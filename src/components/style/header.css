@@ -1,0 +1,84 @@
+.spacer {
+    margin-left: 10px;
+    border-bottom: 1px solid #d8dce3;
+    color:black;
+    color: rgb(189, 189, 189);
+    font-size: 8px;
+    font-weight: 400;
+
+  }
+  .logout-button  {
+    width: 8%;
+    padding: 0px 10px;
+    background: none;
+    color: rgba(98, 98, 110, 0.9);
+    text-align: left;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 36px;
+    border-width: 0px;
+  }
+  header{
+        border-bottom: 1px solid #d8dce3;
+        color:black
+  }
+  .heading{
+    margin: 2px;
+
+  }
+  .name{
+    border-width: 0px;
+  }
+  .Assigne-name{
+    margin-right: 8px;
+    color: rgb(98, 98, 110);
+    background: none;
+    font-family: "IBM Plex Sans";
+    font-size: 15px;
+    font-weight: 600;
+  }
+  ul:not(.fjs-form ul) {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.clickOpt:first-child::after,
+.clickOpt:first-child::before
+ {
+  position: absolute;
+  border: solid transparent;
+  content: " ";
+  pointer-events: none;
+  bottom: 100%;
+  right: 15px;
+}
+.logbutton{
+ 
+    width: 100%;
+    padding: 0px 10px;
+    background: none;
+    /* color: rgba(98, 98, 110, 0.9); */
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 36px;
+    border-width: 0px;
+}
+
+  .listing-down{
+   
+      position: absolute;
+      right: -8px;
+      min-width: 186px;
+      margin-top: 5px;
+      padding-left: 0px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 2px 0px;
+      border: 1px solid rgb(216, 220, 227);
+      border-radius: 3px;
+      background-color: rgb(247, 248, 250);
+  
+  }

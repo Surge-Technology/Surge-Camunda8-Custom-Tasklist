@@ -1,0 +1,112 @@
+.main-bar{
+    display: flex;
+    height: calc(100%-56px);
+}
+.ksUgYX {
+    display: flex;
+    height: calc(100% - 56px);
+}
+.left-container{
+   background-color:  rgb(247, 248, 250);
+   width: fit-content;
+   border-style: solid;
+   border-color: rgb(69, 70, 72);
+border-width: 0px 0px 1px 1px;   
+}
+.side-panel{
+    width: 478px;
+    height: 100%;
+}
+.title-name{
+    padding: 3px 0px 3px 19px;
+    border-bottom: 1px solid rgb(216, 220, 227);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(247, 248, 250);
+}
+.col-button{
+    border-width: 0px;
+}
+.filter-opt{
+    width: 100%;
+    font-weight: 600;
+    padding: 4px 8px;
+    background-color: center no-repeat rgb(242, 243, 245);
+}
+.instance-div{
+    display: flex;
+    flex-direction: column;
+    padding: 17px 20px 26px;
+    min-height: 87px;
+    /* -webkit-box-pack: justify; */
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(216, 220, 227);
+    background-color: rgb(234, 243, 255);
+    cursor: pointer;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.instance-block {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 20px 26px;
+    min-height: 87px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(216, 220, 227);
+    background-color: rgb(234, 243, 255);
+    cursor: pointer;
+}
+.name-block{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.assigne-block{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+.right-container{
+    border-width: 0px 1px 1px;
+    border-style: solid;
+    border-color: rgb(216, 220, 227);
+    border-image: initial;
+    width: 100%;
+    height: 100%;
+}
+.show-table {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 38px auto 38px;
+}
+.fabOcg {
+    background-color: rgb(253, 253, 254);
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.gfcpuo {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    position: relative;
+}
+.FGpqU {
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+.gVObmX {
+    border-bottom: 1px solid rgb(216, 220, 227);
+}
+.ldGcji {
+    width: 198px;
+    padding: 12px 20px;
+    text-align: left;
+    color: rgba(69, 70, 78, 0.9);
+}
