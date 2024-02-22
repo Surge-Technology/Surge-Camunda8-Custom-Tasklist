@@ -42,9 +42,21 @@
     margin: 0px;
     list-style-type: none;
 }
-li {
+/* li {
   display: list-item;
   text-align: -webkit-match-parent;
+} */
+.clickOpt{
+  color: black;
+    display: flex;
+    flex-direction: column;
+    /* padding: 17px 20px 26px; */
+    /* min-height: 87px; */
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(216, 220, 227);
+    background-color: rgb(234, 243, 255);
+    cursor: pointer;
+
 }
 .clickOpt:first-child::after,
 .clickOpt:first-child::before
@@ -58,21 +70,21 @@ li {
 }
 .logbutton{
  
-    width: 100%;
-    padding: 0px 10px;
-    background: none;
-    /* color: rgba(98, 98, 110, 0.9); */
-    text-align: left;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 36px;
-    border-width: 0px;
+  width: 100%;
+  padding: 0px 10px;
+  background: none;
+  /* color: rgba(98, 98, 110, 0.9); */
+  /* text-align: left; */
+  /* font-size: 15px; */
+  font-weight: 600; 
+  /* line-height: 36px; */
+  border-width: 0px 
 }
 
   .listing-down{
    
       position: absolute;
-      right: -8px;
+      right: -22px;
       min-width: 186px;
       margin-top: 5px;
       padding-left: 0px;

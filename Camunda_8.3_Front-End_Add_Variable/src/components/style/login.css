@@ -1,0 +1,117 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+ 
+  .title {
+    font-size: 40px;
+    width: "96";
+    height: "33";
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }  
+ 
+  .sc-dPyBCJ {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+ 
+  .sc-BeQoi {
+    position: relative;
+    margin-bottom: 20px;
+  }
+ 
+  .sc-iTONeN {
+    width: 300px;
+    padding: 10px;
+    background-color:#ffffff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+ 
+  .login-container{
+    background-color:rgba(243, 246, 246, 0.726);
+  }
+ 
+  .sc-iTONeN:disabled {
+    background-color: #ffffff;
+    cursor: not-allowed;
+  }
+ 
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+ 
+  .input-field {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+  }
+ 
+  .input-field:focus + label,
+  .input-field:valid + label {
+    top: -15px;
+    font-size: 12px;
+    color: #333;
+  }
+ 
+  label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #999;
+    transition: 0.2s ease-in-out;
+  }
+ 
+ 
+  .submit-button{
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(241, 242, 245);
+    color: rgba(69, 70, 78, 0.5);
+    border: 1px solid rgb(176, 186, 199);
+    box-shadow:none;
+    cursor: pointer;
+   
+  }
+ 
+ 
+  .sc-hTtwUo idTMZw{
+    color: rgb(126, 126, 127);
+    opacity: 0.9;
+    font-size: 10px;
+    margin-top: 35px;
+    width: 489px;
+  }
+ 
+  .label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #d8d4d4;
+    pointer-events: none;
+    transition: transform 0.3s ease-out, font-size 0.3s ease-out;
+  }
+ 
+  .submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+ 
+  .sc-hTtwUo.idTMZw {
+    font-size: 14px; /* Adjust the font size value as needed */
+  }
+ 
+ 
+  .dMkxtJ:visited{
+    color: #A846FE;
+ }
+ 

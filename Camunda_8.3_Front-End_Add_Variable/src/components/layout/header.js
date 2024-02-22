@@ -1,18 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import CIcon from "@coreui/icons-react";
-import { cilAccountLogout } from "@coreui/icons";
-import { CAvatar } from "@coreui/react";
-import "../style/header.css";
 
+import "../style/header.css";
+import icons from "../images/2logo.jpg";
 const Header = () => {
   const [showLogoutButton, setShowLogoutButton] = useState(false);
+  const [username, setUsername] = useState(
+    localStorage.getItem("username") || ""
+  );
+  const buttonRef = useRef(null);
   const navigate = useNavigate();
 
   const handleLogoutClick = () => {
-    setShowLogoutButton(!showLogoutButton); // Toggle the visibility
+    setShowLogoutButton(!showLogoutButton); 
+  };
+  const handleClickOutside = (event) => {
+    if (buttonRef.current && !buttonRef.current.contains(event.target)) {
+      setShowLogoutButton(false);
+    }
   };
 
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
   const handleLogout = () => {
     navigate("/");
   };
@@ -20,21 +34,21 @@ const Header = () => {
   return (
     <div>
       <header className="navbar navbar-dark bg-light ">
+      
         <div className="heading">
           <Link className="nav-link">
-            <CAvatar color="secondary" size="lg">
-              C
-            </CAvatar>
+           
+            <img src={icons} alt="My Icon" />
             <span className="spacer"></span>
-            Surge Tasklist
+             Tasklist
           </Link>
         </div>
 
         
         <div className="navbar navbar-dark bg-light mr-4">
-          <button className="name" onClick={handleLogoutClick}>
+          <button className="name" ref={buttonRef} onClick={handleLogoutClick}>
             <div className="Assigne-name ">
-              demo
+            {username}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
