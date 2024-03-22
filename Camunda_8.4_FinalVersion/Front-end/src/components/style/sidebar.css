@@ -1,0 +1,421 @@
+.sidebar {
+  /* width: 600px; */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-color: rgb(128, 128, 128);
+  border-width: 1px;
+  width: 30%;
+  min-width: 60px;
+  height: 100vh;
+  background-color: rgb(247, 248, 250) !important;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(247, 248, 250);
+  color: rgb(7, 7, 7);
+  overflow-y: auto; 
+  max-height: 90vh; 
+  flex-shrink: 0;
+}
+/* background-color: #e7e7e7 !important;  */
+
+.sidebar.expanded {
+  /* width: 30%; */
+  width: 467px;
+  border-bottom: 1px solid rgb(216, 220, 227);
+  border-width: 0px 1px 1px;
+  border-style: solid;
+  border-color: rgb(216, 220, 227);
+}
+
+.sidebar.minimized {
+  width: 0;
+  overflow: hidden;
+  /* width: 60px; */
+  /* width: 50px;  */
+  /* Adjust the collapsed width as needed */
+
+}
+.text {
+  /* color:  rgb(98, 98, 110); */
+  /* margin-right: 10px; */
+  height: 31px;
+    line-height: 32px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(247, 248, 250);
+    color: rgb(98, 98, 110);
+     /* padding: 3px 0px 3px 19px; */
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.text-1{
+  height: 31px;
+  /* line-height: 32px; */
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(247, 248, 250);
+  color: rgb(98, 98, 110);
+  border-bottom: 1px solid rgb(216, 220, 227);
+  text-align: left;
+margin-left: 6px;
+}
+.toggle-button {
+  cursor: pointer;
+  margin-left: 45%;
+  padding: 8px;
+  text-align: right;
+  /* background-color: rgb(214, 219, 222); */
+  background-color: 1px solid rgb(176, 186, 199);
+  border-width: 0px;
+  
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+  list-style-type: none;
+
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  padding: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 17px 20px 26px;
+  min-height: 87px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(216, 220, 227);
+  /* background-color: rgb(234, 243, 255); */
+  cursor: pointer;
+}
+
+.collapsible-panel {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto; /* Push the panel to the bottom */
+  background-color: #c8c5c5;
+  /* color: #fff; */
+}
+.text-light {
+  /* color: #f8f9fa; */
+  color: black;
+}
+.toggle-container {
+  /* border-bottom: 1px solid rgb(216, 220, 227); */
+  border-bottom: 2px solid #d8dce3;
+  color: black;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  /*  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown {
+  /* margin: 10px; */
+  padding: 22px 20px 20px;
+}
+
+.main-container {
+  display: flex;
+  height: 90vh;
+  overflow: hidden;}
+
+.right-side {
+  flex-grow: 0;
+  /* overflow-y: auto; */
+  /* padding: 20px; */
+  box-sizing: border-box;
+  transition: margin-left 0.3s ease;
+  margin-top: 20px;
+}
+
+.collapsed-right-side {
+  margin-left: 50px; }
+
+
+.right-side.minimized {
+  flex: 0;
+  width: 100%;
+}
+.table{
+  border-collapse: collapse;
+}
+.t-head{
+  /* width: 198px;
+  padding: 12px 20px; */
+  width: 198px;
+  padding: 12px 20px;
+  text-align: left;
+  margin: 34px 19px 0px 20px;
+color: rgba(69, 70, 78, 0.9);
+}
+.v-head{
+  text-align: left;
+  margin: 34px 19px 0px 20px;
+
+  /* color: rgba(45, 59, 163, 0.9); */
+}
+td{
+  text-align: left;
+}
+.claim-detail{
+  display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    
+}
+.claim-button{
+  padding-right: 30px;
+}
+
+.form-layout{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow-y: hidden;
+
+}
+.variables{
+  display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 34px 19px 0px 20px;
+    
+    padding-bottom: 8px;
+}
+.add-variable{
+  height: 22px;
+    padding: 0px 11px 0px 9px;
+    border-radius: 11px;
+    border: 1px solid rgb(158, 169, 183);
+    background-color: rgb(216, 220, 227);
+    font-size: 13px;
+    color: rgb(69, 70, 78);
+    margin: 34px 19px 0px 20px;
+margin-bottom: 30px;
+}
+.form-group{
+  /* font-weight: normal; */
+    color: rgba(69, 70, 78, 0.9);
+    text-align: left;
+    width: 12px;
+    /* padding: 12px 12px 7px 0px; */
+    border-radius: 20%;
+    /* margin: 34px 19px 0px 20px; */
+
+}
+
+.sc-tableCon{
+  display: grid;
+    overflow-y: hidden;
+}
+.sc-table{
+  width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+.newValue,.resValue{
+  /* border-collapse: collapse; */
+  width: 60%;
+  text-align: left;
+}
+.variable-container {
+  max-height: 200px; /* Set your desired max height */
+  overflow-y: auto; /* Add vertical scrollbar when content overflows */
+}
+
+.ValueVar{
+text-align: left;
+width: 40%;
+margin-bottom: 20px;
+text-decoration: none;
+}
+.nameVar{
+  width: 16px;
+  margin-bottom:20px;
+}
+.varRows{
+  margin-top: 30px;
+}
+tr{
+  margin-bottom: 20px;
+
+}
+.no-item-selected{
+  margin-top: 20%;
+}
+
+/* Style for list items */
+.list-item {
+  padding: 10px;
+  cursor: pointer;
+  background-color: white; /* Default background color for unselected items */
+  color: black; /* Default text color for unselected items */
+}
+.sidebar .list-item.selected {
+  background-color: blue !important; /* Blue background color for selected item */
+  color: white !important; /* White text color for selected item */
+}
+
+/* Hover effect for list items */
+.list-item:hover {
+  background-color: #f0f0f0; /* Light gray background color on hover for unselected items */
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+#form-label{
+  position: relative;
+  /* text-align: left; */
+  display: flex;
+  /* margin-left: 2px; */
+  margin-bottom: 6px;
+  color: rgba(69, 70, 78, 0.9);
+    font-size: 14px;
+    font-weight: 600;
+}
+#form-label-select{
+  color: rgba(69, 70, 78, 0.9);
+
+  display: flex;
+  position: relative;
+  margin-bottom: 6px;
+  cursor: pointer;
+  
+}
+.var-label{
+  display: flex;
+  font-weight: 600;
+  color: rgba(69, 70, 78, 0.9);
+margin-bottom: 3px;
+margin-top: 5px;
+}
+.radioBox,.checkBox{
+  cursor: pointer;
+  margin-right: 8px;
+}
+.checkList{
+text-align: left ;
+margin-right: 5px;
+}
+ .form-layout{
+  width: 50%;
+ margin: 3px 3px 3px 3px;
+ margin-right: 5px;
+}
+  /* flex: 0; 
+} */
+#task-form{
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: rgb(98, 98, 110);
+  text-align: left;
+  margin-left: 17px;
+  
+}
+.selected-option{
+  font-weight: 600;
+}
+.form-select {
+  font-weight: 700;
+}
+.labelForm{
+  position:relative;
+}
+.completeButton{
+  border-radius: 12px;
+  font-size: 20px;
+  margin-top: 0px;
+  padding-right: 20px;
+  /* background-color: cadetblue; */
+  position: relative;
+  text-align: right;
+}
+.description{
+  text-align: left;
+  font-size: "1px";
+  color: "#666";
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+.readOnly-input {
+  background-color: #f2f2f2; /* Set background color to light gray */
+  color: #999; /* Set text color to gray */
+  cursor: not-allowed; /* Change cursor to not-allowed */
+}
+.textarea-wrapper {
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Stack items vertically */
+  /* gap: 20px;  */
+  margin-bottom: 20px;
+}
+.hysFkT {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr;
+  overflow-y: hidden;
+  
+}
+
+.form-fs{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr 35px;
+  overflow-y: hidden;
+  text-align: left;
+}
+.form-sc{
+  /* display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center; */
+  margin: 0px 19px 0px 0px;
+  padding-bottom: 8px;
+}
+.task-form{
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(98, 98, 110);
+  padding-left:10px ;
+}
+.form-th{
+  overflow-y: auto;
+  max-height: 260px;
+  
+  overflow-x: hidden;
+padding-right: 24px;
+}
+ .fjs-fr{
+
+  margin: 16px;
+ }
+  
